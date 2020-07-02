@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="calculator.Arithmetic">
+      <class name="calculator.MathFunctions">
         <methods>
-          <include name="add"/>
-          <include name="Multiplication"/>
-          <include name="subtract"/>
+          <include name="inverse"/>
         </methods>
-      </class> <!-- calculator.Arithmetic -->
+      </class> <!-- calculator.MathFunctions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

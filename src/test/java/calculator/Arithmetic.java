@@ -2,65 +2,83 @@ package calculator;
 
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Arithmetic {
-    
-    // Passing the 3 sets of data from data provider
-	@Test (dataProvider="dataManager", groups= {"smoke"})
-	public void add(int a, int b) {
-	  	int c = a+b;
-	  	System.out.println("The sum is : "+c);
-	  	Reporter.log("Numbers added successfully"); // to see the logs on index.html report
-	  	Reporter.log("Numbers added successfully", true); // to see the logs in console
+
+	// Passing the 3 sets of data from data provider
+
+	@Test(dataProvider = "testData", groups = { "smoke" }, dependsOnMethods = "subtract")
+	public void add(int a, int b, int d) {
+		int c = a + b;
+		Assert.assertEquals(c, d);
+		Reporter.log("Numbers added successfully and The sum is : " + c, true); // to see the logs on index.html report and console
+																				 
+
 	}
-	
-	  // Passing the 3 sets of data from data provider
-	@Test (dataProvider="dataManager")
-	public void subtract(int a, int b) {
-		int c = a-b;
-		System.out.println("The difference is : "+c);
+
+	// Passing the 3 sets of data from data provider
+
+	@Test(dataProvider = "dataManager", groups = { "smoke" })
+	public void subtract(int a, int b, int c) {
+		int d = a - b;
+		Assert.assertEquals(c, d);
+		Reporter.log("Numbers subtaracted successfully and The difference is : " + c, true);
+
 	}
-	
+
 	// Passing the data from XML file
-	@Parameters({"num1","num2"})
-	@Test
+	@BeforeTest // no matter you include the method in xml file(inside class) it will execute
+				// once before the tests
+	@Parameters({ "num1", "num2" })
 	public void Multiplication(int num1, int num2) {
-		int num3 = num1*num2;
-		System.out.println("The Multiplication is :" +num3);
+		int num3 = num1 * num2;
+		Assert.assertTrue(true, "Multiplied");
+		Reporter.log("Numbers multiplied successfully and The Multiplication is :" + num3, true);
 	}
-	
-	
-	@Test (dataProvider="dataManager", groups= {"smoke"})
+
+	@Test(dataProvider = "dataManager", groups = { "smoke" }) // This method will fail
 	public static void DivReal(int a, int b) {
 		if (b == 0) {
-	         throw new IllegalArgumentException("Cannot divide by 0!");
-	      }
-	   System.out.println((double) a / b);
-	
+			throw new IllegalArgumentException("Cannot divide by 0!");
+		}
+		Assert.assertFalse(false, "Test case failed");
+		Reporter.log("Numbers divided successfully andThe real division is :" + (double) a / b);
+
 	}
-	
-	@Test (dataProvider="dataManager")
+
+	@Test(dataProvider = "intData", groups = { "Regression" })
 	public static void DivInt(int a, int b) {
 		if (b == 0) {
-	         throw new IllegalArgumentException("Cannot divide by 0!");
-	      }
-	     System.out.println(a / b);
+			throw new IllegalArgumentException("Cannot divide by 0!");
+		}
+		Reporter.log("Numbers divided successfully and The Integer division value is " + a / b);
 	}
-	
-	@DataProvider( name = "dataManager", parallel = true)
-	public Object[][]  getData() {
-		Object[][] data = new Object[3][2];
-		data[0][0] = 6;
-		data[0][1] = 2;
-		data[1][0] = 4;
-		data[1][1] = 6;
-		data[2][0] = 8;
-		data[2][1] = 10;
-		return data;
+
+	@DataProvider(name = "dataManager")
+	public Object[][] getData() {
+		return new Object[][] {
+
+				{ 67, 34, 33 }, { 6, 2, 4 }, { 997, 23, 974 } };
 	}
-	
-	
+
+	@DataProvider(name = "testData")
+	public Object[][] Data() {
+		return new Object[][] {
+
+				{ 10, 20, 30 }, { 6, 2, 8 }, { 99, 1, 100 } };
+	}
+
+	@DataProvider(name = "intData")
+	public Object[][] intData() {
+		return new Object[][] {
+
+				{ 10, 20 }, { 60, 2 }, { 50, 30 } };
+	}
 }

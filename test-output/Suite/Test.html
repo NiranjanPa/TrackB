@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jun 21 21:58:59 IST 2020</td>
+<td>Started on:</td><td>Thu Jul 02 08:48:28 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (240 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (370 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,45 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='calculator.MathFunctions.inverse()'><b>inverse</b><br>Test class: calculator.MathFunctions<br>Parameters: 5, negate</td>
+<td><div><pre>java.lang.AssertionError: did not expect [-5] but found [-5]
+	at calculator.MathFunctions.inverse(MathFunctions.java:66)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace597677513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace597677513'><pre>java.lang.AssertionError: did not expect [-5] but found [-5]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertNotEquals(Assert.java:1399)
+	at org.testng.Assert.assertNotEquals(Assert.java:1404)
+	at calculator.MathFunctions.inverse(MathFunctions.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>calculator.MathFunctions@49fc609f</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,40 +114,200 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='calculator.Arithmetic.Multiplication()'><b>Multiplication</b><br>Test class: calculator.Arithmetic<br>Parameters: 5, 3</td>
+<td title='calculator.Arithmetic.DivInt()'><b>DivInt</b><br>Test class: calculator.Arithmetic<br>Parameters: 10, 20<br/>
+<a href="#Output-825717105" onClick='toggleBox("Output-825717105", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-825717105" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-825717105">
+Numbers divided successfully and The Integer division value is 0<br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>calculator.Arithmetic@3701eaf6</td></tr>
+<td>calculator.Arithmetic@3d99d22e</td></tr>
 <tr>
-<td title='calculator.MathFunctions.mod()'><b>mod</b><br>Test class: calculator.MathFunctions<br>Parameters: 2, 3</td>
+<td title='calculator.Arithmetic.DivInt()'><b>DivInt</b><br>Test class: calculator.Arithmetic<br>Parameters: 60, 2<br/>
+<a href="#Output-290157702" onClick='toggleBox("Output-290157702", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-290157702" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-290157702">
+Numbers divided successfully and The Integer division value is 30<br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>calculator.MathFunctions@627551fb</td></tr>
+<td>calculator.Arithmetic@3d99d22e</td></tr>
 <tr>
-<td title='calculator.MathFunctions.mod()'><b>mod</b><br>Test class: calculator.MathFunctions<br>Parameters: 4, 6</td>
+<td title='calculator.Arithmetic.DivInt()'><b>DivInt</b><br>Test class: calculator.Arithmetic<br>Parameters: 50, 30<br/>
+<a href="#Output-1677296137" onClick='toggleBox("Output-1677296137", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1677296137" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1677296137">
+Numbers divided successfully and The Integer division value is 1<br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>calculator.MathFunctions@627551fb</td></tr>
+<td>calculator.Arithmetic@3d99d22e</td></tr>
 <tr>
-<td title='calculator.MathFunctions.mod()'><b>mod</b><br>Test class: calculator.MathFunctions<br>Parameters: 8, 10</td>
+<td title='calculator.Arithmetic.add()'><b>add</b><br>Test class: calculator.Arithmetic<br>Parameters: 10, 20, 30<br/>
+<a href="#Output-180227314" onClick='toggleBox("Output-180227314", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-180227314" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-180227314">
+Numbers added successfully and The sum is : 30<br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>calculator.MathFunctions@627551fb</td></tr>
+<td>calculator.Arithmetic@3d99d22e</td></tr>
 <tr>
-<td title='calculator.Arithmetic.subtract()'><b>subtract</b><br>Test class: calculator.Arithmetic<br>Parameters: 6, 2</td>
+<td title='calculator.Arithmetic.add()'><b>add</b><br>Test class: calculator.Arithmetic<br>Parameters: 6, 2, 8<br/>
+<a href="#Output-243370365" onClick='toggleBox("Output-243370365", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-243370365" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-243370365">
+Numbers added successfully and The sum is : 8<br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>calculator.Arithmetic@3701eaf6</td></tr>
+<td>calculator.Arithmetic@3d99d22e</td></tr>
 <tr>
-<td title='calculator.Arithmetic.subtract()'><b>subtract</b><br>Test class: calculator.Arithmetic<br>Parameters: 8, 10</td>
+<td title='calculator.Arithmetic.add()'><b>add</b><br>Test class: calculator.Arithmetic<br>Parameters: 99, 1, 100<br/>
+<a href="#Output-1266878153" onClick='toggleBox("Output-1266878153", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1266878153" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1266878153">
+Numbers added successfully and The sum is : 100<br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>calculator.Arithmetic@3701eaf6</td></tr>
+<td>calculator.Arithmetic@3d99d22e</td></tr>
 <tr>
-<td title='calculator.Arithmetic.subtract()'><b>subtract</b><br>Test class: calculator.Arithmetic<br>Parameters: 4, 6</td>
+<td title='calculator.MathFunctions.addd()'><b>addd</b><br>Test class: calculator.MathFunctions<br>Parameters: 6, 34, 6</td>
 <td></td>
 <td>0</td>
-<td>calculator.Arithmetic@3701eaf6</td></tr>
+<td>calculator.MathFunctions@49fc609f</td></tr>
+<tr>
+<td title='calculator.MathFunctions.addd()'><b>addd</b><br>Test class: calculator.MathFunctions<br>Parameters: 70, 2, 0</td>
+<td></td>
+<td>0</td>
+<td>calculator.MathFunctions@49fc609f</td></tr>
+<tr>
+<td title='calculator.MathFunctions.addd()'><b>addd</b><br>Test class: calculator.MathFunctions<br>Parameters: 9, 23, 9</td>
+<td></td>
+<td>0</td>
+<td>calculator.MathFunctions@49fc609f</td></tr>
+<tr>
+<td title='calculator.MathFunctions.exp()'><b>exp</b><br>Test class: calculator.MathFunctions<br>Parameters: 30.56, 8.98, 2.1710862763428168E13<br/>
+<a href="#Output-1874548071" onClick='toggleBox("Output-1874548071", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1874548071" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1874548071">
+The power value is : 2.1710862763428168E13<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>calculator.MathFunctions@49fc609f</td></tr>
+<tr>
+<td title='calculator.MathFunctions.exp()'><b>exp</b><br>Test class: calculator.MathFunctions<br>Parameters: 45.45, 2.1, 3025.6672459330484<br/>
+<a href="#Output-1885973372" onClick='toggleBox("Output-1885973372", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1885973372" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1885973372">
+The power value is : 3025.6672459330484<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>calculator.MathFunctions@49fc609f</td></tr>
+<tr>
+<td title='calculator.MathFunctions.exp()'><b>exp</b><br>Test class: calculator.MathFunctions<br>Parameters: 97.89, 23.34, 2.909595305722029E46<br/>
+<a href="#Output-291280314" onClick='toggleBox("Output-291280314", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-291280314" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-291280314">
+The power value is : 2.909595305722029E46<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>calculator.MathFunctions@49fc609f</td></tr>
+<tr>
+<td title='calculator.MathFunctions.mod()'><b>mod</b><br>Test class: calculator.MathFunctions<br>Parameters: 6, 34, 6<br/>
+<a href="#Output-1360506" onClick='toggleBox("Output-1360506", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1360506" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1360506">
+The modulus value is: 6<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>calculator.MathFunctions@49fc609f</td></tr>
+<tr>
+<td title='calculator.MathFunctions.mod()'><b>mod</b><br>Test class: calculator.MathFunctions<br>Parameters: 70, 2, 0<br/>
+<a href="#Output-69949088" onClick='toggleBox("Output-69949088", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-69949088" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-69949088">
+The modulus value is: 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>calculator.MathFunctions@49fc609f</td></tr>
+<tr>
+<td title='calculator.MathFunctions.mod()'><b>mod</b><br>Test class: calculator.MathFunctions<br>Parameters: 9, 23, 9<br/>
+<a href="#Output-1093257281" onClick='toggleBox("Output-1093257281", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1093257281" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1093257281">
+The modulus value is: 9<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>calculator.MathFunctions@49fc609f</td></tr>
+<tr>
+<td title='calculator.Arithmetic.subtract()'><b>subtract</b><br>Test class: calculator.Arithmetic<br>Parameters: 67, 34, 33<br/>
+<a href="#Output-384924127" onClick='toggleBox("Output-384924127", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-384924127" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-384924127">
+Numbers subtaracted successfully and The difference is : 33<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>calculator.Arithmetic@3d99d22e</td></tr>
+<tr>
+<td title='calculator.Arithmetic.subtract()'><b>subtract</b><br>Test class: calculator.Arithmetic<br>Parameters: 6, 2, 4<br/>
+<a href="#Output-1935680530" onClick='toggleBox("Output-1935680530", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1935680530" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1935680530">
+Numbers subtaracted successfully and The difference is : 4<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>calculator.Arithmetic@3d99d22e</td></tr>
+<tr>
+<td title='calculator.Arithmetic.subtract()'><b>subtract</b><br>Test class: calculator.Arithmetic<br>Parameters: 997, 23, 974<br/>
+<a href="#Output-376930092" onClick='toggleBox("Output-376930092", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-376930092" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-376930092">
+Numbers subtaracted successfully and The difference is : 974<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>calculator.Arithmetic@3d99d22e</td></tr>
 </table><p>
 </body>
 </html>

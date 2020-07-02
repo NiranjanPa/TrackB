@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes" allow-return-values="true">
+  <listeners>
+    <listener class-name="calculator.ListenerTest"/>
+  </listeners>
   <test thread-count="4" name="Test(failed)" parallel="classes">
     <parameter name="num1" value="5"/>
+    <parameter name="operation" value="negate"/>
     <parameter name="num2" value="3"/>
     <classes>
       <class name="calculator.MathFunctions">
         <methods>
-          <include name="exp"/>
+          <include name="inverse" invocation-numbers="0"/>
+          <include name="OddorEven"/>
+          <include name="positiveOrNegative"/>
         </methods>
       </class> <!-- calculator.MathFunctions -->
     </classes>
