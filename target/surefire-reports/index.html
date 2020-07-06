@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">21 methods,   21 passed</span>
+                    <span class="method-stats">19 methods, 1 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.MathFunctions" hash-for-method="inverse(5, negate)">inverse(5, negate)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +116,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.Arithmetic" hash-for-method="DivInt(10, 20)">DivInt(10, 20)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.Arithmetic" hash-for-method="DivInt(50, 30)">DivInt(50, 30)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -112,22 +126,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.Arithmetic" hash-for-method="DivInt(50, 30)">DivInt(50, 30)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.Arithmetic" hash-for-method="Multiplication(5, 3)">Multiplication(5, 3)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.Arithmetic" hash-for-method="MultiplicationUsingAdd(5, 3)">MultiplicationUsingAdd(5, 3)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.Arithmetic" hash-for-method="add(6, 2, 8)">add(6, 2, 8)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.Arithmetic" hash-for-method="DivInt(10, 20)">DivInt(10, 20)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -142,22 +141,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.Arithmetic" hash-for-method="add(10, 20)">add(10, 20)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.Arithmetic" hash-for-method="add(6, 2, 8)">add(6, 2, 8)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.Arithmetic" hash-for-method="add(60, 2)">add(60, 2)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.MathFunctions" hash-for-method="addd(9, 23, 9)">addd(9, 23, 9)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.Arithmetic" hash-for-method="add(50, 30)">add(50, 30)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.MathFunctions" hash-for-method="addd(6, 34, 6)">addd(6, 34, 6)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.MathFunctions" hash-for-method="exp(45.45, 2.1, 3025.6672459330484)">exp(45.45, 2.1, 3025.6672459330484)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.MathFunctions" hash-for-method="addd(70, 2, 0)">addd(70, 2, 0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -172,7 +171,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.MathFunctions" hash-for-method="inverse(5, negate)">inverse(5, negate)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.MathFunctions" hash-for-method="exp(45.45, 2.1, 3025.6672459330484)">exp(45.45, 2.1, 3025.6672459330484)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -192,12 +191,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.Arithmetic" hash-for-method="subtract(67, 34, 33)">subtract(67, 34, 33)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.Arithmetic" hash-for-method="subtract(6, 2, 4)">subtract(6, 2, 4)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.Arithmetic" hash-for-method="subtract(6, 2, 4)">subtract(6, 2, 4)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="calculator.Arithmetic" hash-for-method="subtract(67, 34, 33)">subtract(67, 34, 33)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -217,6 +216,29 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">calculator.MathFunctions</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="inverse(5, negate)">
+                  </a> <!-- inverse(5, negate) -->
+                  <span class="method-name">inverse</span>
+                  <span class="parameters">(5, negate)</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect [-5] but found [-5]
+	at calculator.MathFunctions.inverse(MathFunctions.java:66)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -225,10 +247,26 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="exp(45.45, 2.1, 3025.6672459330484)">
-                  </a> <!-- exp(45.45, 2.1, 3025.6672459330484) -->
-                  <span class="method-name">exp</span>
-                  <span class="parameters">(45.45, 2.1, 3025.6672459330484)</span>
+                  <a name="addd(9, 23, 9)">
+                  </a> <!-- addd(9, 23, 9) -->
+                  <span class="method-name">addd</span>
+                  <span class="parameters">(9, 23, 9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addd(6, 34, 6)">
+                  </a> <!-- addd(6, 34, 6) -->
+                  <span class="method-name">addd</span>
+                  <span class="parameters">(6, 34, 6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addd(70, 2, 0)">
+                  </a> <!-- addd(70, 2, 0) -->
+                  <span class="method-name">addd</span>
+                  <span class="parameters">(70, 2, 0)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -249,10 +287,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="inverse(5, negate)">
-                  </a> <!-- inverse(5, negate) -->
-                  <span class="method-name">inverse</span>
-                  <span class="parameters">(5, negate)</span>
+                  <a name="exp(45.45, 2.1, 3025.6672459330484)">
+                  </a> <!-- exp(45.45, 2.1, 3025.6672459330484) -->
+                  <span class="method-name">exp</span>
+                  <span class="parameters">(45.45, 2.1, 3025.6672459330484)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -289,10 +327,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="DivInt(10, 20)">
-                  </a> <!-- DivInt(10, 20) -->
+                  <a name="DivInt(50, 30)">
+                  </a> <!-- DivInt(50, 30) -->
                   <span class="method-name">DivInt</span>
-                  <span class="parameters">(10, 20)</span>
+                  <span class="parameters">(50, 30)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -305,34 +343,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="DivInt(50, 30)">
-                  </a> <!-- DivInt(50, 30) -->
+                  <a name="DivInt(10, 20)">
+                  </a> <!-- DivInt(10, 20) -->
                   <span class="method-name">DivInt</span>
-                  <span class="parameters">(50, 30)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Multiplication(5, 3)">
-                  </a> <!-- Multiplication(5, 3) -->
-                  <span class="method-name">Multiplication</span>
-                  <span class="parameters">(5, 3)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="MultiplicationUsingAdd(5, 3)">
-                  </a> <!-- MultiplicationUsingAdd(5, 3) -->
-                  <span class="method-name">MultiplicationUsingAdd</span>
-                  <span class="parameters">(5, 3)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="add(6, 2, 8)">
-                  </a> <!-- add(6, 2, 8) -->
-                  <span class="method-name">add</span>
-                  <span class="parameters">(6, 2, 8)</span>
+                  <span class="parameters">(10, 20)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -353,34 +367,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="add(10, 20)">
-                  </a> <!-- add(10, 20) -->
+                  <a name="add(6, 2, 8)">
+                  </a> <!-- add(6, 2, 8) -->
                   <span class="method-name">add</span>
-                  <span class="parameters">(10, 20)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="add(60, 2)">
-                  </a> <!-- add(60, 2) -->
-                  <span class="method-name">add</span>
-                  <span class="parameters">(60, 2)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="add(50, 30)">
-                  </a> <!-- add(50, 30) -->
-                  <span class="method-name">add</span>
-                  <span class="parameters">(50, 30)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="subtract(67, 34, 33)">
-                  </a> <!-- subtract(67, 34, 33) -->
-                  <span class="method-name">subtract</span>
-                  <span class="parameters">(67, 34, 33)</span>
+                  <span class="parameters">(6, 2, 8)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -389,6 +379,14 @@
                   </a> <!-- subtract(6, 2, 4) -->
                   <span class="method-name">subtract</span>
                   <span class="parameters">(6, 2, 4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="subtract(67, 34, 33)">
+                  </a> <!-- subtract(67, 34, 33) -->
+                  <span class="method-name">subtract</span>
+                  <span class="parameters">(67, 34, 33)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -504,96 +502,88 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(21);
+data.addRows(19);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'exp')
-data.setCell(0, 2, 'calculator.MathFunctions')
-data.setCell(0, 3, 23);
+data.setCell(0, 1, 'subtract')
+data.setCell(0, 2, 'calculator.Arithmetic')
+data.setCell(0, 3, 15);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'DivInt')
-data.setCell(1, 2, 'calculator.Arithmetic')
-data.setCell(1, 3, 16);
+data.setCell(1, 1, 'exp')
+data.setCell(1, 2, 'calculator.MathFunctions')
+data.setCell(1, 3, 7);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'subtract')
 data.setCell(2, 2, 'calculator.Arithmetic')
-data.setCell(2, 3, 5);
+data.setCell(2, 3, 7);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'inverse')
+data.setCell(3, 1, 'addd')
 data.setCell(3, 2, 'calculator.MathFunctions')
 data.setCell(3, 3, 5);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'exp')
+data.setCell(4, 1, 'inverse')
 data.setCell(4, 2, 'calculator.MathFunctions')
-data.setCell(4, 3, 4);
+data.setCell(4, 3, 5);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'exp')
-data.setCell(5, 2, 'calculator.MathFunctions')
+data.setCell(5, 1, 'DivInt')
+data.setCell(5, 2, 'calculator.Arithmetic')
 data.setCell(5, 3, 3);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'MultiplicationUsingAdd')
-data.setCell(6, 2, 'calculator.Arithmetic')
+data.setCell(6, 1, 'addd')
+data.setCell(6, 2, 'calculator.MathFunctions')
 data.setCell(6, 3, 3);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'add')
+data.setCell(7, 1, 'subtract')
 data.setCell(7, 2, 'calculator.Arithmetic')
-data.setCell(7, 3, 2);
+data.setCell(7, 3, 3);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'subtract')
-data.setCell(8, 2, 'calculator.Arithmetic')
+data.setCell(8, 1, 'mod')
+data.setCell(8, 2, 'calculator.MathFunctions')
 data.setCell(8, 3, 2);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'mod')
-data.setCell(9, 2, 'calculator.MathFunctions')
+data.setCell(9, 1, 'add')
+data.setCell(9, 2, 'calculator.Arithmetic')
 data.setCell(9, 3, 1);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'mod')
+data.setCell(10, 1, 'exp')
 data.setCell(10, 2, 'calculator.MathFunctions')
 data.setCell(10, 3, 1);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'DivInt')
+data.setCell(11, 1, 'add')
 data.setCell(11, 2, 'calculator.Arithmetic')
 data.setCell(11, 3, 1);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'subtract')
-data.setCell(12, 2, 'calculator.Arithmetic')
+data.setCell(12, 1, 'addd')
+data.setCell(12, 2, 'calculator.MathFunctions')
 data.setCell(12, 3, 1);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'mod')
+data.setCell(13, 1, 'exp')
 data.setCell(13, 2, 'calculator.MathFunctions')
 data.setCell(13, 3, 1);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'add')
-data.setCell(14, 2, 'calculator.Arithmetic')
-data.setCell(14, 3, 1);
+data.setCell(14, 1, 'mod')
+data.setCell(14, 2, 'calculator.MathFunctions')
+data.setCell(14, 3, 0);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'add')
+data.setCell(15, 1, 'DivInt')
 data.setCell(15, 2, 'calculator.Arithmetic')
-data.setCell(15, 3, 1);
+data.setCell(15, 3, 0);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'Multiplication')
+data.setCell(16, 1, 'add')
 data.setCell(16, 2, 'calculator.Arithmetic')
-data.setCell(16, 3, 1);
+data.setCell(16, 3, 0);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'add')
+data.setCell(17, 1, 'DivInt')
 data.setCell(17, 2, 'calculator.Arithmetic')
-data.setCell(17, 3, 1);
+data.setCell(17, 3, 0);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'add')
-data.setCell(18, 2, 'calculator.Arithmetic')
+data.setCell(18, 1, 'mod')
+data.setCell(18, 2, 'calculator.MathFunctions')
 data.setCell(18, 3, 0);
-data.setCell(19, 0, 19)
-data.setCell(19, 1, 'add')
-data.setCell(19, 2, 'calculator.Arithmetic')
-data.setCell(19, 3, 0);
-data.setCell(20, 0, 20)
-data.setCell(20, 1, 'DivInt')
-data.setCell(20, 2, 'calculator.Arithmetic')
-data.setCell(20, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 72 ms</span>
+              <span class="suite-total-time">Total running time: 55 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -605,9 +595,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">add(6, 2, 8)</span>
+              <span class="reporter-method-name">add(10, 20, 30)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Numbers added successfully and The sum is : 8</span>
+                <span class="reporter-method-output">Numbers added successfully and The sum is : 30</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -617,33 +607,15 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">DivInt(10, 20)</span>
+              <span class="reporter-method-name">subtract(6, 2, 4)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Numbers divided successfully and The Integer division value is 0</span>
+                <span class="reporter-method-output">Numbers subtaracted successfully and The difference is : 4</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">add(10, 20, 30)</span>
+              <span class="reporter-method-name">DivInt(50, 30)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Numbers added successfully and The sum is : 30</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">exp(45.45, 2.1, 3025.6672459330484)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">The power value is : 3025.6672459330484</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">add(99, 1, 100)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Numbers added successfully and The sum is : 100</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">mod(6, 34, 6)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">The modulus value is: 6</span>
+                <span class="reporter-method-output">Numbers divided successfully and The Integer division value is 1</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -659,9 +631,21 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
+              <span class="reporter-method-name">add(99, 1, 100)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Numbers added successfully and The sum is : 100</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">exp(30.56, 8.98, 2.1710862763428168E13)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">The power value is : 2.1710862763428168E13</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">DivInt(10, 20)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Numbers divided successfully and The Integer division value is 0</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -671,45 +655,33 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">subtract(6, 2, 4)</span>
+              <span class="reporter-method-name">add(6, 2, 8)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Numbers subtaracted successfully and The difference is : 4</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">mod(9, 23, 9)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">The modulus value is: 9</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">MultiplicationUsingAdd(5, 3)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Numbers multiplied successfully and The Multiplication is :3</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">inverse(5, negate)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">The negative value is : -5</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">DivInt(50, 30)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Numbers divided successfully and The Integer division value is 1</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">Multiplication(5, 3)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Numbers multiplied successfully and The Multiplication is :15</span>
+                <span class="reporter-method-output">Numbers added successfully and The sum is : 8</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">subtract(997, 23, 974)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Numbers subtaracted successfully and The difference is : 974</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">exp(45.45, 2.1, 3025.6672459330484)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">The power value is : 3025.6672459330484</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">mod(6, 34, 6)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">The modulus value is: 6</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">mod(9, 23, 9)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">The modulus value is: 9</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -735,124 +707,116 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">calculator.Arithmetic</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">DivInt(10, 20)</span>
+              <div class="configuration-test before">
+                <span class="method-name">Multiplication(5, 3)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">subtract(67, 34, 33)</span>
+                <span class="method-start">379 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">calculator.MathFunctions</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">exp(30.56, 8.98, 2.1710862763428168E13)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">379 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">calculator.Arithmetic</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">DivInt(60, 2)</span>
-                <span class="method-start">31 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">calculator.MathFunctions</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">exp(45.45, 2.1, 3025.6672459330484)</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">404 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">calculator.Arithmetic</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">DivInt(50, 30)</span>
-                <span class="method-start">33 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Multiplication(5, 3)</span>
-                <span class="method-start">36 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">MultiplicationUsingAdd(5, 3)</span>
-                <span class="method-start">41 ms</span>
+                <span class="method-name">subtract(6, 2, 4)</span>
+                <span class="method-start">404 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">calculator.MathFunctions</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">exp(97.89, 23.34, 2.909595305722029E46)</span>
-                <span class="method-start">49 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">calculator.Arithmetic</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">subtract(67, 34, 33)</span>
-                <span class="method-start">56 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">subtract(6, 2, 4)</span>
-                <span class="method-start">63 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">calculator.MathFunctions</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">inverse(5, negate)</span>
-                <span class="method-start">64 ms</span>
+                <span class="method-start">406 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">calculator.Arithmetic</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">subtract(997, 23, 974)</span>
-                <span class="method-start">65 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add(10, 20)</span>
-                <span class="method-start">95 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add(60, 2)</span>
-                <span class="method-start">97 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add(50, 30)</span>
-                <span class="method-start">99 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add(10, 20, 30)</span>
-                <span class="method-start">105 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add(6, 2, 8)</span>
-                <span class="method-start">108 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add(99, 1, 100)</span>
-                <span class="method-start">112 ms</span>
+                <span class="method-start">421 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">calculator.MathFunctions</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">inverse(5, negate)</span>
+                <span class="method-start">434 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">calculator.Arithmetic</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">DivInt(10, 20)</span>
+                <span class="method-start">435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DivInt(60, 2)</span>
+                <span class="method-start">437 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DivInt(50, 30)</span>
+                <span class="method-start">440 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">add(10, 20, 30)</span>
+                <span class="method-start">460 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">add(6, 2, 8)</span>
+                <span class="method-start">465 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">add(99, 1, 100)</span>
+                <span class="method-start">468 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">calculator.MathFunctions</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addd(6, 34, 6)</span>
+                <span class="method-start">587 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addd(70, 2, 0)</span>
+                <span class="method-start">594 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addd(9, 23, 9)</span>
+                <span class="method-start">600 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">mod(6, 34, 6)</span>
-                <span class="method-start">115 ms</span>
+                <span class="method-start">661 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">mod(70, 2, 0)</span>
-                <span class="method-start">118 ms</span>
+                <span class="method-start">665 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">mod(9, 23, 9)</span>
-                <span class="method-start">122 ms</span>
+                <span class="method-start">667 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">positiveOrNegative(5)</span>
-                <span class="method-start">126 ms</span>
+                <span class="method-start">668 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">OddorEven(3)</span>
-                <span class="method-start">136 ms</span>
+                <span class="method-start">674 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
