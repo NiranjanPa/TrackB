@@ -2,10 +2,6 @@ package calculator;
 
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -18,10 +14,16 @@ public class Arithmetic {
 	public void add(int a, int b, int d) {
 		int c = a + b;
 		Assert.assertEquals(c, d);
-		Reporter.log("Numbers added successfully and The sum is : " + c, true); // to see the logs on index.html report and console
-																				 
+		Reporter.log("Numbers added successfully and The sum is : " + c, true); // to see the logs on index.html report and console																		 
+	}
+	
+	@Test(dataProvider = "intData", groups = { "smoke" }, dependsOnMethods = "subtract")
+	public int add(int a, int b) {
+		int c = a + b;
+		return c;																		 
 
 	}
+	
 
 	// Passing the 3 sets of data from data provider
 
@@ -34,7 +36,7 @@ public class Arithmetic {
 	}
 
 	// Passing the data from XML file
-	@BeforeTest // no matter you include the method in xml file(inside class) it will execute
+	@Test // no matter you include the method in xml file(inside class) it will execute
 				// once before the tests
 	@Parameters({ "num1", "num2" })
 	public void Multiplication(int num1, int num2) {
@@ -42,6 +44,23 @@ public class Arithmetic {
 		Assert.assertTrue(true, "Multiplied");
 		Reporter.log("Numbers multiplied successfully and The Multiplication is :" + num3, true);
 	}
+	
+	
+	// Passing the data from XML file
+	@Test // no matter you include the method in xml file(inside class) it will execute
+				// once before the tests
+	@Parameters({ "num1", "num2" })
+	public void MultiplicationUsingAdd(int num1, int num2) {
+		
+		int result = 0;
+		
+		for(int i = 0; i < num1; i++) {
+		result = add(result, num2);
+		}
+		//int num3 = num1 * num2;
+		//Assert.assertTrue(true, "Multiplied");
+		Reporter.log("Numbers multiplied successfully and The Multiplication is :" + num2, true);
+	}	
 
 	@Test(dataProvider = "dataManager", groups = { "smoke" }) // This method will fail
 	public static void DivReal(int a, int b) {
@@ -49,7 +68,7 @@ public class Arithmetic {
 			throw new IllegalArgumentException("Cannot divide by 0!");
 		}
 		Assert.assertFalse(false, "Test case failed");
-		Reporter.log("Numbers divided successfully andThe real division is :" + (double) a / b);
+		Reporter.log("Numbers divided successfully andThe real division is :" + (double) a / b, true);
 
 	}
 
@@ -58,7 +77,7 @@ public class Arithmetic {
 		if (b == 0) {
 			throw new IllegalArgumentException("Cannot divide by 0!");
 		}
-		Reporter.log("Numbers divided successfully and The Integer division value is " + a / b);
+		Reporter.log("Numbers divided successfully and The Integer division value is " + a / b, true);
 	}
 
 	@DataProvider(name = "dataManager")
@@ -81,4 +100,7 @@ public class Arithmetic {
 
 				{ 10, 20 }, { 60, 2 }, { 50, 30 } };
 	}
+	
+
+	
 }

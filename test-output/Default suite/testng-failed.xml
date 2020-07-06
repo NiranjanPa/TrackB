@@ -6,6 +6,8 @@
       <class name="calculator.MathFunctions">
         <methods>
           <include name="inverse"/>
+          <include name="OddorEven"/>
+          <include name="positiveOrNegative"/>
         </methods>
       </class> <!-- calculator.MathFunctions -->
     </classes>

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 30 16:26:23 IST 2020</td>
+<td>Started on:</td><td>Sat Jul 04 07:17:31 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (319 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (438 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,85 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='calculator.MathFunctions.positiveOrNegative()'><b>positiveOrNegative</b><br>Test class: calculator.MathFunctions</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;num1&apos; is required by AfterClass on method positiveOrNegative but has not been marked @Optional or defined
+in C:\Users\USER\AppData\Local\Temp\testng-eclipse--1522514879\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:272)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1884122755", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1884122755'><pre>org.testng.TestNGException: 
+Parameter &apos;num1&apos; is required by AfterClass on method positiveOrNegative but has not been marked @Optional or defined
+in C:\Users\USER\AppData\Local\Temp\testng-eclipse--1522514879\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:272)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>-1593827251</td>
+<td>calculator.MathFunctions@578486a3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='calculator.MathFunctions.OddorEven()'><b>OddorEven</b><br>Test class: calculator.MathFunctions</td>
+<td></td>
+<td>-1593827251</td>
+<td>calculator.MathFunctions@578486a3</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,7 +157,7 @@ function toggleAllBoxes() {
 <td title='calculator.MathFunctions.inverse()'><b>inverse</b><br>Test class: calculator.MathFunctions</td>
 <td><div><pre>org.testng.TestNGException: 
 Parameter &apos;num1&apos; is required by @Test on method inverse but has not been marked @Optional or defined
-in C:\Users\USER\AppData\Local\Temp\testng-eclipse-812214139\testng-customsuite.xml
+in C:\Users\USER\AppData\Local\Temp\testng-eclipse--1522514879\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:272)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
@@ -106,10 +185,10 @@ in C:\Users\USER\AppData\Local\Temp\testng-eclipse-812214139\testng-customsuite.
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace671471369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace671471369'><pre>org.testng.TestNGException: 
+</pre></div><a href='#' onClick='toggleBox("stack-trace911312317", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace911312317'><pre>org.testng.TestNGException: 
 Parameter &apos;num1&apos; is required by @Test on method inverse but has not been marked @Optional or defined
-in C:\Users\USER\AppData\Local\Temp\testng-eclipse-812214139\testng-customsuite.xml
+in C:\Users\USER\AppData\Local\Temp\testng-eclipse--1522514879\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:272)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
@@ -139,7 +218,7 @@ in C:\Users\USER\AppData\Local\Temp\testng-eclipse-812214139\testng-customsuite.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>calculator.MathFunctions@6025e1b6</td></tr>
+<td>calculator.MathFunctions@578486a3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -149,35 +228,77 @@ in C:\Users\USER\AppData\Local\Temp\testng-eclipse-812214139\testng-customsuite.
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='calculator.MathFunctions.exp()'><b>exp</b><br>Test class: calculator.MathFunctions<br>Parameters: 2.7, 30.8</td>
+<td title='calculator.MathFunctions.exp()'><b>exp</b><br>Test class: calculator.MathFunctions<br>Parameters: 30.56, 8.98, 2.1710862763428168E13<br/>
+<a href="#Output-490150701" onClick='toggleBox("Output-490150701", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-490150701" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-490150701">
+The power value is : 2.1710862763428168E13<br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>calculator.MathFunctions@6025e1b6</td></tr>
+<td>calculator.MathFunctions@578486a3</td></tr>
 <tr>
-<td title='calculator.MathFunctions.exp()'><b>exp</b><br>Test class: calculator.MathFunctions<br>Parameters: 49.67, 62.45</td>
+<td title='calculator.MathFunctions.exp()'><b>exp</b><br>Test class: calculator.MathFunctions<br>Parameters: 45.45, 2.1, 3025.6672459330484<br/>
+<a href="#Output-770189387" onClick='toggleBox("Output-770189387", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-770189387" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-770189387">
+The power value is : 3025.6672459330484<br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>calculator.MathFunctions@6025e1b6</td></tr>
+<td>calculator.MathFunctions@578486a3</td></tr>
 <tr>
-<td title='calculator.MathFunctions.exp()'><b>exp</b><br>Test class: calculator.MathFunctions<br>Parameters: 87.9, 10.34</td>
+<td title='calculator.MathFunctions.exp()'><b>exp</b><br>Test class: calculator.MathFunctions<br>Parameters: 97.89, 23.34, 2.909595305722029E46<br/>
+<a href="#Output-963522361" onClick='toggleBox("Output-963522361", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-963522361" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-963522361">
+The power value is : 2.909595305722029E46<br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>calculator.MathFunctions@6025e1b6</td></tr>
+<td>calculator.MathFunctions@578486a3</td></tr>
 <tr>
-<td title='calculator.MathFunctions.mod()'><b>mod</b><br>Test class: calculator.MathFunctions<br>Parameters: 2, 3</td>
+<td title='calculator.MathFunctions.mod()'><b>mod</b><br>Test class: calculator.MathFunctions<br>Parameters: 6, 34, 6<br/>
+<a href="#Output-1858609436" onClick='toggleBox("Output-1858609436", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1858609436" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1858609436">
+The modulus value is: 6<br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>calculator.MathFunctions@6025e1b6</td></tr>
+<td>calculator.MathFunctions@578486a3</td></tr>
 <tr>
-<td title='calculator.MathFunctions.mod()'><b>mod</b><br>Test class: calculator.MathFunctions<br>Parameters: 4, 6</td>
+<td title='calculator.MathFunctions.mod()'><b>mod</b><br>Test class: calculator.MathFunctions<br>Parameters: 70, 2, 0<br/>
+<a href="#Output-1920387277" onClick='toggleBox("Output-1920387277", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1920387277" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1920387277">
+The modulus value is: 0<br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>calculator.MathFunctions@6025e1b6</td></tr>
+<td>calculator.MathFunctions@578486a3</td></tr>
 <tr>
-<td title='calculator.MathFunctions.mod()'><b>mod</b><br>Test class: calculator.MathFunctions<br>Parameters: 8, 10</td>
+<td title='calculator.MathFunctions.mod()'><b>mod</b><br>Test class: calculator.MathFunctions<br>Parameters: 9, 23, 9<br/>
+<a href="#Output-1414147750" onClick='toggleBox("Output-1414147750", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1414147750" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1414147750">
+The modulus value is: 9<br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>calculator.MathFunctions@6025e1b6</td></tr>
+<td>calculator.MathFunctions@578486a3</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,50 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="1" total="20" passed="18">
+<testng-results skipped="0" failed="1" ignored="1" total="22" passed="20">
   <reporter-output>
     <line>
-      <![CDATA[Numbers multiplied successfully and The Multiplication is :15]]>
-    </line>
-    <line>
-      <![CDATA[Numbers subtaracted successfully and The difference is : 33]]>
-    </line>
-    <line>
       <![CDATA[The power value is : 2.1710862763428168E13]]>
-    </line>
-    <line>
-      <![CDATA[The power value is : 3025.6672459330484]]>
-    </line>
-    <line>
-      <![CDATA[Numbers subtaracted successfully and The difference is : 4]]>
-    </line>
-    <line>
-      <![CDATA[The power value is : 2.909595305722029E46]]>
-    </line>
-    <line>
-      <![CDATA[Numbers subtaracted successfully and The difference is : 974]]>
     </line>
     <line>
       <![CDATA[Numbers divided successfully and The Integer division value is 0]]>
     </line>
     <line>
+      <![CDATA[The power value is : 3025.6672459330484]]>
+    </line>
+    <line>
       <![CDATA[Numbers divided successfully and The Integer division value is 30]]>
+    </line>
+    <line>
+      <![CDATA[The power value is : 2.909595305722029E46]]>
     </line>
     <line>
       <![CDATA[Numbers divided successfully and The Integer division value is 1]]>
     </line>
     <line>
-      <![CDATA[Numbers added successfully and The sum is : 30]]>
+      <![CDATA[Numbers multiplied successfully and The Multiplication is :15]]>
+    </line>
+    <line>
+      <![CDATA[Numbers multiplied successfully and The Multiplication is :3]]>
+    </line>
+    <line>
+      <![CDATA[Numbers subtaracted successfully and The difference is : 33]]>
+    </line>
+    <line>
+      <![CDATA[Numbers subtaracted successfully and The difference is : 4]]>
     </line>
     <line>
       <![CDATA[The modulus value is: 6]]>
     </line>
     <line>
-      <![CDATA[Numbers added successfully and The sum is : 8]]>
+      <![CDATA[Numbers subtaracted successfully and The difference is : 974]]>
     </line>
     <line>
       <![CDATA[The modulus value is: 0]]>
-    </line>
-    <line>
-      <![CDATA[Numbers added successfully and The sum is : 100]]>
     </line>
     <line>
       <![CDATA[The modulus value is: 9]]>
@@ -53,247 +47,35 @@
       <![CDATA[5 is a positive number]]>
     </line>
     <line>
+      <![CDATA[Numbers added successfully and The sum is : 30]]>
+    </line>
+    <line>
+      <![CDATA[Numbers added successfully and The sum is : 8]]>
+    </line>
+    <line>
+      <![CDATA[Numbers added successfully and The sum is : 100]]>
+    </line>
+    <line>
       <![CDATA[Entered number:3 is odd]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="370" started-at="2020-07-02T08:48:28 IST" finished-at="2020-07-02T08:48:28 IST">
+  <suite name="Suite" duration-ms="503" started-at="2020-07-06T16:56:08 IST" finished-at="2020-07-06T16:56:09 IST">
     <groups>
-      <group name="Regression">
-        <method signature="MathFunctions.exp(double, double, double)[pri:0, instance:calculator.MathFunctions@49fc609f]" name="exp" class="calculator.MathFunctions"/>
-        <method signature="MathFunctions.inverse(int, java.lang.String)[pri:0, instance:calculator.MathFunctions@49fc609f]" name="inverse" class="calculator.MathFunctions"/>
-        <method signature="Arithmetic.DivInt(int, int)[pri:0, instance:calculator.Arithmetic@3d99d22e]" name="DivInt" class="calculator.Arithmetic"/>
-      </group> <!-- Regression -->
       <group name="smoke">
-        <method signature="Arithmetic.subtract(int, int, int)[pri:0, instance:calculator.Arithmetic@3d99d22e]" name="subtract" class="calculator.Arithmetic"/>
-        <method signature="Arithmetic.add(int, int, int)[pri:0, instance:calculator.Arithmetic@3d99d22e]" name="add" class="calculator.Arithmetic"/>
-        <method signature="MathFunctions.mod(int, int, int)[pri:0, instance:calculator.MathFunctions@49fc609f]" name="mod" class="calculator.MathFunctions"/>
+        <method signature="Arithmetic.subtract(int, int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="subtract" class="calculator.Arithmetic"/>
+        <method signature="Arithmetic.add(int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="add" class="calculator.Arithmetic"/>
+        <method signature="Arithmetic.add(int, int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="add" class="calculator.Arithmetic"/>
+        <method signature="MathFunctions.mod(int, int, int)[pri:0, instance:calculator.MathFunctions@43bd930a]" name="mod" class="calculator.MathFunctions"/>
       </group> <!-- smoke -->
+      <group name="Regression">
+        <method signature="Arithmetic.DivInt(int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="DivInt" class="calculator.Arithmetic"/>
+        <method signature="MathFunctions.exp(double, double, double)[pri:0, instance:calculator.MathFunctions@43bd930a]" name="exp" class="calculator.MathFunctions"/>
+        <method signature="MathFunctions.inverse(int, java.lang.String)[pri:0, instance:calculator.MathFunctions@43bd930a]" name="inverse" class="calculator.MathFunctions"/>
+      </group> <!-- Regression -->
     </groups>
-    <test name="Test" duration-ms="370" started-at="2020-07-02T08:48:28 IST" finished-at="2020-07-02T08:48:28 IST">
-      <class name="calculator.Arithmetic">
-        <test-method status="PASS" signature="Multiplication(int, int)[pri:0, instance:calculator.Arithmetic@3d99d22e]" name="Multiplication" is-config="true" duration-ms="53" started-at="2020-07-02T08:48:28 IST" finished-at="2020-07-02T08:48:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Numbers multiplied successfully and The Multiplication is :15]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Multiplication -->
-        <test-method status="PASS" signature="subtract(int, int, int)[pri:0, instance:calculator.Arithmetic@3d99d22e]" name="subtract" duration-ms="32" started-at="2020-07-02T08:48:28 IST" data-provider="dataManager" finished-at="2020-07-02T08:48:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[67]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[34]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[33]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Numbers subtaracted successfully and The difference is : 33]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- subtract -->
-        <test-method status="PASS" signature="subtract(int, int, int)[pri:0, instance:calculator.Arithmetic@3d99d22e]" name="subtract" duration-ms="0" started-at="2020-07-02T08:48:28 IST" data-provider="dataManager" finished-at="2020-07-02T08:48:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Numbers subtaracted successfully and The difference is : 4]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- subtract -->
-        <test-method status="PASS" signature="subtract(int, int, int)[pri:0, instance:calculator.Arithmetic@3d99d22e]" name="subtract" duration-ms="0" started-at="2020-07-02T08:48:28 IST" data-provider="dataManager" finished-at="2020-07-02T08:48:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[997]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[23]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[974]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Numbers subtaracted successfully and The difference is : 974]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- subtract -->
-        <test-method status="PASS" signature="DivInt(int, int)[pri:0, instance:calculator.Arithmetic@3d99d22e]" name="DivInt" duration-ms="6" started-at="2020-07-02T08:48:28 IST" data-provider="intData" finished-at="2020-07-02T08:48:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Numbers divided successfully and The Integer division value is 0]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- DivInt -->
-        <test-method status="PASS" signature="DivInt(int, int)[pri:0, instance:calculator.Arithmetic@3d99d22e]" name="DivInt" duration-ms="31" started-at="2020-07-02T08:48:28 IST" data-provider="intData" finished-at="2020-07-02T08:48:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[60]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Numbers divided successfully and The Integer division value is 30]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- DivInt -->
-        <test-method status="PASS" signature="DivInt(int, int)[pri:0, instance:calculator.Arithmetic@3d99d22e]" name="DivInt" duration-ms="0" started-at="2020-07-02T08:48:28 IST" data-provider="intData" finished-at="2020-07-02T08:48:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[50]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[30]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Numbers divided successfully and The Integer division value is 1]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- DivInt -->
-        <test-method status="PASS" signature="add(int, int, int)[pri:0, instance:calculator.Arithmetic@3d99d22e]" name="add" duration-ms="0" started-at="2020-07-02T08:48:28 IST" data-provider="testData" depends-on-methods="calculator.Arithmetic.subtract" finished-at="2020-07-02T08:48:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[30]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Numbers added successfully and The sum is : 30]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- add -->
-        <test-method status="PASS" signature="add(int, int, int)[pri:0, instance:calculator.Arithmetic@3d99d22e]" name="add" duration-ms="0" started-at="2020-07-02T08:48:28 IST" data-provider="testData" depends-on-methods="calculator.Arithmetic.subtract" finished-at="2020-07-02T08:48:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[99]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[100]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Numbers added successfully and The sum is : 100]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- add -->
-        <test-method status="PASS" signature="add(int, int, int)[pri:0, instance:calculator.Arithmetic@3d99d22e]" name="add" duration-ms="0" started-at="2020-07-02T08:48:28 IST" data-provider="testData" depends-on-methods="calculator.Arithmetic.subtract" finished-at="2020-07-02T08:48:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Numbers added successfully and The sum is : 8]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- add -->
-      </class> <!-- calculator.Arithmetic -->
+    <test name="Test" duration-ms="503" started-at="2020-07-06T16:56:08 IST" finished-at="2020-07-06T16:56:09 IST">
       <class name="calculator.MathFunctions">
-        <test-method status="PASS" signature="exp(double, double, double)[pri:0, instance:calculator.MathFunctions@49fc609f]" name="exp" duration-ms="32" started-at="2020-07-02T08:48:28 IST" data-provider="Doubledata" finished-at="2020-07-02T08:48:28 IST">
+        <test-method status="PASS" signature="exp(double, double, double)[pri:0, instance:calculator.MathFunctions@43bd930a]" name="exp" duration-ms="55" started-at="2020-07-06T16:56:08 IST" data-provider="Doubledata" finished-at="2020-07-06T16:56:08 IST">
           <params>
             <param index="0">
               <value>
@@ -317,7 +99,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- exp -->
-        <test-method status="PASS" signature="exp(double, double, double)[pri:0, instance:calculator.MathFunctions@49fc609f]" name="exp" duration-ms="0" started-at="2020-07-02T08:48:28 IST" data-provider="Doubledata" finished-at="2020-07-02T08:48:28 IST">
+        <test-method status="PASS" signature="exp(double, double, double)[pri:0, instance:calculator.MathFunctions@43bd930a]" name="exp" duration-ms="6" started-at="2020-07-06T16:56:09 IST" data-provider="Doubledata" finished-at="2020-07-06T16:56:09 IST">
           <params>
             <param index="0">
               <value>
@@ -341,7 +123,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- exp -->
-        <test-method status="PASS" signature="exp(double, double, double)[pri:0, instance:calculator.MathFunctions@49fc609f]" name="exp" duration-ms="0" started-at="2020-07-02T08:48:28 IST" data-provider="Doubledata" finished-at="2020-07-02T08:48:28 IST">
+        <test-method status="PASS" signature="exp(double, double, double)[pri:0, instance:calculator.MathFunctions@43bd930a]" name="exp" duration-ms="7" started-at="2020-07-06T16:56:09 IST" data-provider="Doubledata" finished-at="2020-07-06T16:56:09 IST">
           <params>
             <param index="0">
               <value>
@@ -365,7 +147,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- exp -->
-        <test-method status="FAIL" signature="inverse(int, java.lang.String)[pri:0, instance:calculator.MathFunctions@49fc609f]" name="inverse" duration-ms="6" started-at="2020-07-02T08:48:28 IST" finished-at="2020-07-02T08:48:28 IST">
+        <test-method status="FAIL" signature="inverse(int, java.lang.String)[pri:0, instance:calculator.MathFunctions@43bd930a]" name="inverse" duration-ms="9" started-at="2020-07-06T16:56:09 IST" finished-at="2020-07-06T16:56:09 IST">
           <params>
             <param index="0">
               <value>
@@ -387,11 +169,11 @@
 at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.assertNotEquals(Assert.java:1399)
 at org.testng.Assert.assertNotEquals(Assert.java:1404)
-at calculator.MathFunctions.inverse(MathFunctions.java:66)
+at calculator.MathFunctions.inverse(MathFunctions.java:57)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -400,79 +182,16 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inverse -->
-        <test-method status="PASS" signature="addd(int, int, int)[pri:0, instance:calculator.MathFunctions@49fc609f]" name="addd" duration-ms="15" started-at="2020-07-02T08:48:28 IST" data-provider="IntegerData" finished-at="2020-07-02T08:48:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[34]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addd -->
-        <test-method status="PASS" signature="addd(int, int, int)[pri:0, instance:calculator.MathFunctions@49fc609f]" name="addd" duration-ms="16" started-at="2020-07-02T08:48:28 IST" data-provider="IntegerData" finished-at="2020-07-02T08:48:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[70]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addd -->
-        <test-method status="PASS" signature="addd(int, int, int)[pri:0, instance:calculator.MathFunctions@49fc609f]" name="addd" duration-ms="0" started-at="2020-07-02T08:48:28 IST" data-provider="IntegerData" finished-at="2020-07-02T08:48:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[9]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[23]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addd -->
-        <test-method status="PASS" signature="mod(int, int, int)[pri:0, instance:calculator.MathFunctions@49fc609f]" name="mod" duration-ms="16" started-at="2020-07-02T08:48:28 IST" data-provider="IntegerData" depends-on-methods="calculator.MathFunctions.exp" finished-at="2020-07-02T08:48:28 IST">
+        <test-method status="PASS" signature="mod(int, int, int)[pri:0, instance:calculator.MathFunctions@43bd930a]" name="mod" duration-ms="4" started-at="2020-07-06T16:56:09 IST" data-provider="IntegerData" depends-on-methods="calculator.MathFunctions.exp" finished-at="2020-07-06T16:56:09 IST">
           <params>
             <param index="0">
               <value>
@@ -496,31 +215,7 @@ at java.lang.Thread.run(Unknown Source)
             </line>
           </reporter-output>
         </test-method> <!-- mod -->
-        <test-method status="PASS" signature="mod(int, int, int)[pri:0, instance:calculator.MathFunctions@49fc609f]" name="mod" duration-ms="16" started-at="2020-07-02T08:48:28 IST" data-provider="IntegerData" depends-on-methods="calculator.MathFunctions.exp" finished-at="2020-07-02T08:48:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[9]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[23]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[The modulus value is: 9]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- mod -->
-        <test-method status="PASS" signature="mod(int, int, int)[pri:0, instance:calculator.MathFunctions@49fc609f]" name="mod" duration-ms="0" started-at="2020-07-02T08:48:28 IST" data-provider="IntegerData" depends-on-methods="calculator.MathFunctions.exp" finished-at="2020-07-02T08:48:28 IST">
+        <test-method status="PASS" signature="mod(int, int, int)[pri:0, instance:calculator.MathFunctions@43bd930a]" name="mod" duration-ms="6" started-at="2020-07-06T16:56:09 IST" data-provider="IntegerData" depends-on-methods="calculator.MathFunctions.exp" finished-at="2020-07-06T16:56:09 IST">
           <params>
             <param index="0">
               <value>
@@ -544,7 +239,31 @@ at java.lang.Thread.run(Unknown Source)
             </line>
           </reporter-output>
         </test-method> <!-- mod -->
-        <test-method status="PASS" signature="positiveOrNegative(int)[pri:0, instance:calculator.MathFunctions@49fc609f]" name="positiveOrNegative" is-config="true" duration-ms="0" started-at="2020-07-02T08:48:28 IST" finished-at="2020-07-02T08:48:28 IST">
+        <test-method status="PASS" signature="mod(int, int, int)[pri:0, instance:calculator.MathFunctions@43bd930a]" name="mod" duration-ms="4" started-at="2020-07-06T16:56:09 IST" data-provider="IntegerData" depends-on-methods="calculator.MathFunctions.exp" finished-at="2020-07-06T16:56:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[23]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[The modulus value is: 9]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- mod -->
+        <test-method status="PASS" signature="positiveOrNegative(int)[pri:0, instance:calculator.MathFunctions@43bd930a]" name="positiveOrNegative" is-config="true" duration-ms="10" started-at="2020-07-06T16:56:09 IST" finished-at="2020-07-06T16:56:09 IST">
           <params>
             <param index="0">
               <value>
@@ -558,7 +277,7 @@ at java.lang.Thread.run(Unknown Source)
             </line>
           </reporter-output>
         </test-method> <!-- positiveOrNegative -->
-        <test-method status="PASS" signature="OddorEven(int)[pri:0, instance:calculator.MathFunctions@49fc609f]" name="OddorEven" is-config="true" duration-ms="16" started-at="2020-07-02T08:48:28 IST" finished-at="2020-07-02T08:48:28 IST">
+        <test-method status="PASS" signature="OddorEven(int)[pri:0, instance:calculator.MathFunctions@43bd930a]" name="OddorEven" is-config="true" duration-ms="8" started-at="2020-07-06T16:56:09 IST" finished-at="2020-07-06T16:56:09 IST">
           <params>
             <param index="0">
               <value>
@@ -573,6 +292,295 @@ at java.lang.Thread.run(Unknown Source)
           </reporter-output>
         </test-method> <!-- OddorEven -->
       </class> <!-- calculator.MathFunctions -->
+      <class name="calculator.Arithmetic">
+        <test-method status="PASS" signature="DivInt(int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="DivInt" duration-ms="57" started-at="2020-07-06T16:56:08 IST" data-provider="intData" finished-at="2020-07-06T16:56:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Numbers divided successfully and The Integer division value is 0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DivInt -->
+        <test-method status="PASS" signature="DivInt(int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="DivInt" duration-ms="6" started-at="2020-07-06T16:56:09 IST" data-provider="intData" finished-at="2020-07-06T16:56:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Numbers divided successfully and The Integer division value is 30]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DivInt -->
+        <test-method status="PASS" signature="DivInt(int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="DivInt" duration-ms="21" started-at="2020-07-06T16:56:09 IST" data-provider="intData" finished-at="2020-07-06T16:56:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Numbers divided successfully and The Integer division value is 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DivInt -->
+        <test-method status="PASS" signature="Multiplication(int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="Multiplication" duration-ms="10" started-at="2020-07-06T16:56:09 IST" finished-at="2020-07-06T16:56:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Numbers multiplied successfully and The Multiplication is :15]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Multiplication -->
+        <test-method status="PASS" signature="MultiplicationUsingAdd(int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="MultiplicationUsingAdd" duration-ms="12" started-at="2020-07-06T16:56:09 IST" finished-at="2020-07-06T16:56:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Numbers multiplied successfully and The Multiplication is :3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MultiplicationUsingAdd -->
+        <test-method status="PASS" signature="subtract(int, int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="subtract" duration-ms="7" started-at="2020-07-06T16:56:09 IST" data-provider="dataManager" finished-at="2020-07-06T16:56:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[67]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[34]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[33]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Numbers subtaracted successfully and The difference is : 33]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- subtract -->
+        <test-method status="PASS" signature="subtract(int, int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="subtract" duration-ms="4" started-at="2020-07-06T16:56:09 IST" data-provider="dataManager" finished-at="2020-07-06T16:56:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Numbers subtaracted successfully and The difference is : 4]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- subtract -->
+        <test-method status="PASS" signature="subtract(int, int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="subtract" duration-ms="6" started-at="2020-07-06T16:56:09 IST" data-provider="dataManager" finished-at="2020-07-06T16:56:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[997]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[23]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[974]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Numbers subtaracted successfully and The difference is : 974]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- subtract -->
+        <test-method status="PASS" signature="add(int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="add" duration-ms="10" started-at="2020-07-06T16:56:09 IST" data-provider="intData" depends-on-methods="calculator.Arithmetic.subtract" finished-at="2020-07-06T16:56:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add -->
+        <test-method status="PASS" signature="add(int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="add" duration-ms="5" started-at="2020-07-06T16:56:09 IST" data-provider="intData" depends-on-methods="calculator.Arithmetic.subtract" finished-at="2020-07-06T16:56:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add -->
+        <test-method status="PASS" signature="add(int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="add" duration-ms="6" started-at="2020-07-06T16:56:09 IST" data-provider="intData" depends-on-methods="calculator.Arithmetic.subtract" finished-at="2020-07-06T16:56:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add -->
+        <test-method status="PASS" signature="add(int, int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="add" duration-ms="4" started-at="2020-07-06T16:56:09 IST" data-provider="testData" depends-on-methods="calculator.Arithmetic.subtract" finished-at="2020-07-06T16:56:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Numbers added successfully and The sum is : 30]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- add -->
+        <test-method status="PASS" signature="add(int, int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="add" duration-ms="11" started-at="2020-07-06T16:56:09 IST" data-provider="testData" depends-on-methods="calculator.Arithmetic.subtract" finished-at="2020-07-06T16:56:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Numbers added successfully and The sum is : 8]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- add -->
+        <test-method status="PASS" signature="add(int, int, int)[pri:0, instance:calculator.Arithmetic@569cfc36]" name="add" duration-ms="5" started-at="2020-07-06T16:56:09 IST" data-provider="testData" depends-on-methods="calculator.Arithmetic.subtract" finished-at="2020-07-06T16:56:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[99]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Numbers added successfully and The sum is : 100]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- add -->
+      </class> <!-- calculator.Arithmetic -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

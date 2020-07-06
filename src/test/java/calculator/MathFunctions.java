@@ -3,11 +3,8 @@ package calculator;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -24,13 +21,7 @@ public class MathFunctions {
 		Assert.assertEquals(c, d);
 		Reporter.log("The power value is : " + c, true);
 	}
-    @Test(dataProvider = "IntegerData")
-    public static int addd(int a, int b,int d) {
-    	int c = a+b;
-    	System.out.println("The add is "+ c);
-		return c;
-    	
-    }
+   
 	// Modulus
 	@Test(dataProvider = "IntegerData", groups = { "smoke" }, dependsOnMethods ="exp")
 	public static void mod(int a, int b, int d) {
@@ -63,7 +54,7 @@ public class MathFunctions {
 				throw new IllegalArgumentException("Cannot divide by 0!");
 			}
 			int c = (-1) * num1;
-			Assert.assertNotEquals(c, -5);
+			Assert.assertNotEquals(c, 5);
 			Reporter.log("The negative value is : " + c, true);
 		}
 	}
