@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="4" parallel ="classes" allow-return-values="true" >
+  <listeners>
+    <listener class-name= "calculator.ListenerTest"/>
+  </listeners>
+  <test name="Test">
+  <parameter name = "num1" value= "5"  />
+  <parameter name = "num2" value = "3"  />
+  <parameter name = "operation" value = "negate"/>
+  
+    <classes>
+    
+      <class name="calculator.Arithmetic">
+      <methods>
+       <exclude name="DivReal"/>
+       </methods>
+           
+     </class> 
+       <class name="calculator.MathFunctions">
+       <methods>
+         <include name="mod"/>
+         <include name="exp"/>
+         <include name="inverse"/>
+         <include name="positiveOrNegative"/>
+         <include name="addd"/>
+         </methods>
+         </class>
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
